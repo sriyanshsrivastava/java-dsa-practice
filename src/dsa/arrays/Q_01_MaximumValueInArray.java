@@ -16,6 +16,9 @@ public class Q_01_MaximumValueInArray {
 
         // printing the maximum value in range
         System.out.println("The maximum value of element in range is: "+ maxInRange);
+
+        // simple finding in range in one statement.
+        System.out.println(maximumValueInRange(arr,2,4));
     }
 
     // write a function which returns maximum value of any integer array.
@@ -36,6 +39,7 @@ public class Q_01_MaximumValueInArray {
     }
 
     // write a function which returns maximum value in given array range or say subArray.
+    // this function returns the maximum value between given indexes last index included.
 
     static int maximumValueInRange(int[] array, int fromIndex,int toIndex){
         if (array.length == 0) {
@@ -43,7 +47,7 @@ public class Q_01_MaximumValueInArray {
         }
         int maximumValue = array[fromIndex];
 
-        for (int i = fromIndex; i < toIndex; i++){
+        for (int i = fromIndex; i <= toIndex; i++){
             if(array[i]>maximumValue){
                 maximumValue= array[i];
             }
