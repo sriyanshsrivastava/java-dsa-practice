@@ -9,6 +9,13 @@ public class Q_01_MaximumValueInArray {
 
         // printing the maximum value
         System.out.println("The maximum value present in this Array is: " + max);
+
+        // calculating maximum value in arr from index 1 to index 3.
+        // output should be 7
+        int maxInRange = maximumValueInRange(arr,1,3);
+
+        // printing the maximum value in range
+        System.out.println("The maximum value of element in range is: "+ maxInRange);
     }
 
     // write a function which returns maximum value of any integer array.
@@ -26,5 +33,21 @@ public class Q_01_MaximumValueInArray {
             }
         }
         return maxvalue;
+    }
+
+    // write a function which returns maximum value in given array range or say subArray.
+
+    static int maximumValueInRange(int[] array, int fromIndex,int toIndex){
+        if (array.length == 0) {
+            throw new IllegalArgumentException("Array is empty");
+        }
+        int maximumValue = array[fromIndex];
+
+        for (int i = fromIndex; i < toIndex; i++){
+            if(array[i]>maximumValue){
+                maximumValue= array[i];
+            }
+        }
+        return maximumValue;
     }
 }
