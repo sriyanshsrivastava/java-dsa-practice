@@ -1,6 +1,6 @@
 package dsa.arrays;
 
-public class ArraysConcepts {
+public class C_01_ArraysConcepts {
     public static void main(String[] args) {
         // Q: Store a roll number
 

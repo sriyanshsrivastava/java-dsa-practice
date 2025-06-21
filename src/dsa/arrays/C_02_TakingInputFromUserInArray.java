@@ -3,7 +3,7 @@ package dsa.arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TakingInputFromUserInArray {
+public class C_02_TakingInputFromUserInArray {
     public static void main(String[] args) {
         // Creating Scanner Object to take input from user
         Scanner in = new Scanner(System.in);

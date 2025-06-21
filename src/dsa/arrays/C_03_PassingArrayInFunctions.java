@@ -2,7 +2,7 @@ package dsa.arrays;
 
 import java.util.Arrays;
 
-public class PassingArrayInFunctions {
+public class C_03_PassingArrayInFunctions {
     // creating a function change in this class
     static void change(int[] arr ){
         arr[0]=99;

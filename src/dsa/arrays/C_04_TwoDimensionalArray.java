@@ -3,7 +3,7 @@ package dsa.arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class TwoDimensionalArray {
+public class C_04_TwoDimensionalArray {
     public static void main(String[] args) {
         // 2-D array looks like below
         // it means array of arrays.
