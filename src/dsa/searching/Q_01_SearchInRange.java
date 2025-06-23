@@ -17,7 +17,6 @@ public class Q_01_SearchInRange {
         System.out.println("Element is present at Index: "+searchIndex);
 
         // try catch block for exception handling.
-
         try{
             int result = searchInRange(arr,48,1,7);
             System.out.println("Element is present at Index: "+result);
@@ -30,6 +29,9 @@ public class Q_01_SearchInRange {
         }finally {
             System.out.println("Thank you !!!");
         }
+
+        // using min() to get minimum value in the array.
+        System.out.println(min(arr));
 
     }
 
@@ -52,5 +54,16 @@ public class Q_01_SearchInRange {
             }
         }
         return -1; // returning -1 if target is not found in the array Range.
+    }
+
+    // write a min() function to return minimum value in the array.
+    static int min(int[] arr){
+        int minimumValue = arr[0];
+        for(int num:arr){
+            if(num < minimumValue){
+                minimumValue = num;
+            }
+        }
+        return minimumValue;
     }
 }
