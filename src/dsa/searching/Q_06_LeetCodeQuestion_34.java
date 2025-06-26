@@ -31,11 +31,15 @@ public class Q_06_LeetCodeQuestion_34 {
     public static int[] searchRange(int[] nums, int target) {
         int[] answer = {-1,-1};
 
-        int start =search(nums,target,true);
-        int end =search(nums,target,false);
+//        int start =search(nums,target,true);
+//        int end =search(nums,target,false);
 
-        answer[0] = start;
-        answer[1] = end;
+        answer[0] = search(nums,target,true);
+        // more optimization
+        if (answer[0]!=-1){
+            answer[1] = search(nums, target, false);
+        }
+        // answer[1] = end;
         return answer;
 
     }
