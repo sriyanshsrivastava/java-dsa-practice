@@ -59,7 +59,8 @@ public class Q_06_LeetCodeQuestion_34 {
                 start = mid+1;
 
             }else{
-                ans=mid;
+                ans = mid; // not returning mid-value storing it into "ans" reference variable to save latest index of occurrence.
+                // checking more same element index of left side of mid and right side of mid.
                 if(findStartIndex){
                     end = mid - 1;
                 }else{
