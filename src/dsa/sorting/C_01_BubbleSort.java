@@ -34,7 +34,10 @@ import java.util.Arrays;
 
 public class C_01_BubbleSort {
     public static void main(String[] args) {
-        int[] arr = {3,1,5,4,2};
+        int[] arr = {3,1,5,4,2,0,8,6,7,13,16,25,40,13};
+        // in above array there is multiple 13 which is at index 9, and 13
+        // so in sorted array order of 13 will be maintained like above means
+        // 13 at index 9 will be before of 13 of index 13 this concept is known as stability.
         int[] result = bubbleSort(arr);
         int[] result2 = optimizedBubbleSort(arr);
         System.out.println("Normal Code Bubble Sort: "+Arrays.toString(result));
@@ -81,7 +84,6 @@ public class C_01_BubbleSort {
                 break;
             }
         }
-
         return array;
     }
 }
