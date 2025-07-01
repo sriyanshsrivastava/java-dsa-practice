@@ -77,7 +77,7 @@ public class C_02_SelectionSort {
     }
 
     // method to swap values in the given array.
-    static void swap(int[] array, int first, int second){
+    public static void swap(int[] array, int first, int second){
         int temp = array[first];
         array[first] = array[second];
         array[second] = temp;
