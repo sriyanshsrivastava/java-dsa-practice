@@ -100,7 +100,7 @@ public class C_04_CyclicSort {
         while (i < array.length){
             int correct = array[i]-1;
             if(array[i]!=array[correct]){
-                C_02_SelectionSort.swap(array, i, correct);
+                Utility.swap(array, i, correct);
             }else{
                 i++;
             }

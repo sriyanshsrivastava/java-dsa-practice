@@ -32,7 +32,7 @@ public class Q_01_LeetcodeQuestion_268 {
         while(i<nums.length){
             int correctIndex = nums[i];
             if (nums[i]<nums.length && correctIndex != i){
-                C_02_SelectionSort.swap(nums, i,correctIndex);
+                Utility.swap(nums, i,correctIndex);
             }else{
                 i++;
             }
