@@ -20,7 +20,7 @@ package dsa.sorting;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q_LeetcodeQuestion_442 {
+public class Q_04_LeetcodeQuestion_442 {
     public static void main(String[] args) {
         int[] arr = {4,3,2,7,8,2,3,1};
         List<Integer> result = findDuplicates(arr);
