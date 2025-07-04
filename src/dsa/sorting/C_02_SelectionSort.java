@@ -72,16 +72,16 @@ public class C_02_SelectionSort {
             // find the max item in the remaining array and swap with correct index
             int last = array.length-1-i;
             int max = getMaxIndex(array,0, last);
-            swap(array,max,last);
+            Utility.swap(array,max,last); // Using swap Method of Utility class.
         }
     }
 
     // method to swap values in the given array.
-    public static void swap(int[] array, int first, int second){
-        int temp = array[first];
-        array[first] = array[second];
-        array[second] = temp;
-    }
+//    public static void swap(int[] array, int first, int second){
+//        int temp = array[first];
+//        array[first] = array[second];
+//        array[second] = temp;
+//    }
 
     // method to get maximum index
     private static int getMaxIndex(int[] array, int start,int end){
