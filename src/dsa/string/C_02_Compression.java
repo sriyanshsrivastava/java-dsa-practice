@@ -1,6 +1,6 @@
 package dsa.string;
 
-public class Compression {
+public class C_02_Compression {
     public static void main(String[] args) {
         String a = "satish";
         String b;
