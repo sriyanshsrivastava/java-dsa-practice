@@ -35,3 +35,50 @@ public class C_02_RecursionImplementation {
         print(n+1); // function calling itself, calling function itself is recursion in programming.
     }
 }
+
+/*
+    Why and When Should We Use Recursion:
+
+    ► When to Use Recursion:
+    1. When a problem has a **repeating or nested structure**.
+    2. When a task can be **broken down into smaller versions of the same task**.
+    3. When dealing with **hierarchical or tree-like data** (e.g., XML/JSON, file directories).
+    4. When implementing **divide and conquer** algorithms.
+    5. When using **backtracking** to explore multiple solutions.
+
+    ► Why Use Recursion:
+    1. **Cleaner and simpler code** – Some problems are more naturally expressed using recursion than loops.
+    2. **Solves problems where loop logic becomes too complicated** or hard to track.
+    3. **Mimics mathematical definitions** (like factorial, Fibonacci, etc.).
+    4. Makes algorithms like tree traversals much more readable and intuitive.
+
+    ► Common Examples:
+    1. **Mathematical Problems**
+       - Factorial: `n! = n * (n-1)!`
+       - Fibonacci: `F(n) = F(n-1) + F(n-2)`
+       - GCD using Euclidean algorithm
+
+    2. **Tree Traversal**
+       - Inorder, Preorder, Postorder traversal of binary trees
+
+    3. **Backtracking Problems**
+       - Sudoku Solver
+       - N-Queens Problem
+       - Generating all permutations or combinations
+
+    4. **Divide and Conquer Algorithms**
+       - Merge Sort
+       - Quick Sort
+       - Binary Search
+
+    5. **File System Traversal**
+       - Listing all files in nested folders
+
+    ► Example (Factorial):
+    ```java
+    int factorial(int n) {
+        if(n == 0) return 1;
+        return n * factorial(n - 1);
+    }
+
+*/
