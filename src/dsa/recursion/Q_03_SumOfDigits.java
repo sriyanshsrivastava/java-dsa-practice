@@ -11,9 +11,10 @@ public class Q_03_SumOfDigits {
         if(number==0){
             return 0;
         }
-        int lastDigit = number%10;
-        number /= 10;
-        int sum =lastDigit + sumOfDigits(number);
+//        int lastDigit = number%10;
+//        number /= 10;
+//        int sum =lastDigit + sumOfDigits(number);
+        int sum = number%10 + sumOfDigits(number/10); // inline single statement
         return sum;
     }
 }
